@@ -106,7 +106,7 @@ def get_random_samples(lines):
     three = three.squeeze()
     return three
 
-# 모델 파라미터 동작하
+# 모델 파라미터 동작하기
 def compute_model_parameter(line):
     # y = mx+n
     m = (line[3] - line[1]) / (line[2] - line[0])
