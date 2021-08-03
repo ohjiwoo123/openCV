@@ -352,3 +352,9 @@ cv2.destroyAllWindows()
 - 아직 코드에 대한 이해도가 부족하고, 다른 좋은 기술들도 많을 테지만 지식이 부족하여 사용하지 못하였다.
 - 좀 더 집중했더라면 좋았을텐데, 개인적인 사정으로 집중력이 좋지 않아서 아쉬웠다. 
 - 아직 이 분야에 대한 전체적인 이해도와 용어 등의 기초 지식들을 쌓아 나갈 필요가 있겠다. 
+- github pull하고 push 해야하는데 아직 익숙하지 못해서 계속 강제 push 중인데 뭔가 아쉽다.
+## 5. 참고 사이트 정리
+- https://velog.io/@bangsy/Python-OpenCV-4 (파이썬 유튜브 링크로 영상 처리하기)
+- https://www.youtube.com/watch?v=ipyzW38sHg0 (도로 위 영상, 유튜브 원본)
+- https://m.blog.naver.com/windowsub0406/220893893795 (SelfDriving 네이버블로그)
+- https://github.com/windowsub0406/SelfDrivingCarND (SelfDriving Github)
