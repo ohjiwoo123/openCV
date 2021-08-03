@@ -1,10 +1,16 @@
 # MiniProject(Self Driving) - detect the Lane
 ## 1. 미니프로젝트 소개 
-- 미니프로젝트의 주제는 차선을 찾는 것입니다. 여기에 한 단계 업그레이드 하여,<br>
+- 미니프로젝트의 주제는 자율주행의 초기 단계중 하나인 차선을 찾는 것입니다.<br>
+아래의 사진은 일반적인 도로에서의 차선을 찾는 경우입니다.<br>
+<img width="1440" alt="스크린샷 2021-08-04 오전 1 46 52" src="https://user-images.githubusercontent.com/80387186/128054674-21c5bfae-5f9e-47d2-b322-a108349ef709.png">
+여기에 한 단계 난이도를 상승시켜서,<br>
 도로에 하얀색 문자 ex) 청담대교 ↑와 같은 문자가 있을 때에도, 그 문자에 방해받지 않도록<br>
 만드는 것을 목표로 하였습니다. <br>
+<img width="1440" alt="스크린샷 2021-08-04 오전 1 46 49" src="https://user-images.githubusercontent.com/80387186/128054736-9ff288e1-e442-43b8-8351-37e54c2daa07.png">
 유튜브에 있는 블랙박스 영상을 참고하여 미니프로젝트를 진행하였습니다.<br>
-버전은 openCV 4.1 사용하였습니다.
+버전은 openCV 4.1 사용하였습니다.<br>
+
+
 ## 2. ch06/miniproject(jw).py - Code
 ```python
 # miniconda 이용하여 가상환경 세팅
@@ -342,18 +348,19 @@ while (cap.isOpened()):
 cap.release()
 cv2.destroyAllWindows()
 ```
-
-## 3. 오류 해결 내역 
+## 3. 주요 용어 및 함수 정리 
+- 정리 예정 
+## 4. 오류 해결 내역 
 - ROI_IMG 영역 및 Canny_IMG 영역을 수정하여 특정 범위 내에서만 Lane을 찾도록 하였다
 - 저장이 안 되어서 헤맨 결과 프레임이 다르지 않아서 생긴 문제였고, 이전에 배운 youtube.py를 참고하여 저장하기에 성공했다.<br>
 처음에 out.write(frame)으로 저장해서 왜 drawing line이 안 보이지? 고민하다 out.write(result)로 바꾸니 잘 나왔다..!
 - 이번 프로젝트의 핵심은 개인적으로  slope_degree라고 생각하는데 수평 각도와 수직 각도를 제한시킴으로써, 선이 다른 쪽으로 유인 안 되게끔 하였다.
-## 4. 아쉬운 점 
+## 5. 아쉬운 점 
 - 아직 코드에 대한 이해도가 부족하고, 다른 좋은 기술들도 많을 테지만 지식이 부족하여 사용하지 못하였다.
 - 좀 더 집중했더라면 좋았을텐데, 개인적인 사정으로 집중력이 좋지 않아서 아쉬웠다. 
-- 아직 이 분야에 대한 전체적인 이해도와 용어 등의 기초 지식들을 쌓아 나갈 필요가 있겠다. 
+- 아직 이 분야에 대한 전체적인 이해도와 용어 등의 기초 지식들을 쌓아 나아갈 필요가 있겠다. 
 - github pull하고 push 해야하는데 아직 익숙하지 못해서 계속 강제 push 중인데 뭔가 아쉽다.
-## 5. 참고 사이트 정리
+## 6. 참고 사이트 정리
 - https://velog.io/@bangsy/Python-OpenCV-4 (파이썬 유튜브 링크로 영상 처리하기)
 - https://www.youtube.com/watch?v=ipyzW38sHg0 (도로 위 영상, 유튜브 원본)
 - https://m.blog.naver.com/windowsub0406/220893893795 (SelfDriving 네이버블로그)
