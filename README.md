@@ -59,7 +59,7 @@ def draw_circle(img, lines, color=[0, 0, 255]):
     for line in lines:
         cv2.circle(img, (line[0], line[1]), 2, color, -1)
 
-# 허프라인? 뭐야 이건 -> 직선 변환 알고리즘
+# hough -> 직선 변환 알고리즘
 def hough_lines(img, rho, theta, threshold, min_line_len, max_line_gap):
     lines = cv2.HoughLinesP(img, rho, theta, threshold, np.array([]), minLineLength=min_line_len,
                             maxLineGap=max_line_gap)
@@ -116,7 +116,7 @@ def compute_model_parameter(line):
     par = np.array([a, b, c])
     return par
 
-# 라인과 포인트 거리재
+# 라인과 포인트 거리재기
 def compute_distance(par, point):
     # distance between line & point
 
@@ -133,7 +133,7 @@ def model_verification(par, lines):
 
     return avg_dist
 
-# 추정선을 그리
+# 추정선을 그리기
 def draw_extrapolate_line(img, par, color=(0, 0, 255), thickness=2):
     x1, y1 = int(-par[1] / par[0] * img.shape[0] - par[2] / par[0]), int(img.shape[0])
     x2, y2 = int(-par[1] / par[0] * (img.shape[0] / 2 + 100) - par[2] / par[0]), int(img.shape[0] / 2 + 100)
