@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Advanced-lane-finding" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Advanced-lane-finding/Advanced-lane-finding" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/SelfDrivingCarND" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/openCV" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/opencv_python_ch06_ch10/ch06" vcs="Git" />
   </component>
 </project>

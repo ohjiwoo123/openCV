@@ -12,11 +12,16 @@ pt2 = [0,0]
 pt3 = [0,0]
 pt4 = [0,0]
 
+# 마우스 클릭 카운터 초기화
 counter = 0
 
+# on_mouse 함수 인자에 4개가 원래 고정 값인지..?
 def on_mouse(event, x,y, flags, param):
+    # pt1,pt2,pt3,pt4 전역변수로 선언
     global counter, pt1,pt2,pt3,pt4
+    # 만약에 flags 그리고 마우스왼쪽버튼클릭이 일어난다면
     if flags & cv2.EVENT_FLAG_LBUTTON:
+        # 현재 클릭이 2번으로 인식되어 0 and 1로 하였음.
         if counter==0 and 1:
             pt1 = [x, y]
             print("pt1, x:{}, y:{}".format(x, y))

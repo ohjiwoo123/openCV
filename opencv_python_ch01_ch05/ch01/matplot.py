@@ -1,10 +1,8 @@
 import matplotlib.pyplot as plt
 import cv2
-import sys
-import glob
+
 
 # 컬러 영상 출력
-imageList = glob.glob("/Users/jwoh/opencvEx/opencv_python_ch01_ch05/ch01/*.bmp")
 imgBGR = cv2.imread('cat.bmp')
 imgRGB = cv2.cvtColor(imgBGR, cv2.COLOR_BGR2RGB)
 
@@ -19,7 +17,7 @@ plt.axis('off')
 plt.imshow(imgGray, cmap='gray')
 plt.show()
 
-    # 두 개의 영상을 함께 출력
-    plt.subplot(121), plt.axis('off'), plt.imshow(imgRGB)
-    plt.subplot(122), plt.axis('off'), plt.imshow(imgGray, cmap='gray')
-    plt.show()
+# 두 개의 영상을 함께 출력
+plt.subplot(121), plt.axis('off'), plt.imshow(imgRGB)
+plt.subplot(122), plt.axis('off'), plt.imshow(imgGray, cmap='gray')
+plt.show()
